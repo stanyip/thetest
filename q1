@@ -1,0 +1,6 @@
+MySQL:
+
+SELECT * FROM time where (uid IN
+(SELECT uid FROM piwik_track
+WHERE time BETWEEN '2017-04-01 00:00:00' AND '2017-04-01 23:59:59')) AND (time BETWEEN '2017-04-02 00:00:00' AND '2017-04-08 23:59:59')
+
